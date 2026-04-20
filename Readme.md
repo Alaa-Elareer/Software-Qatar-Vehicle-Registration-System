@@ -9,10 +9,26 @@
 | Layer | Technology |
 |-------|-----------|
 | Language | Java 21 |
-| UI Framework | JavaFX |
-| Build Tool | Maven |
+| UI Framework | JavaFX + Scene Builder |
+| Build Tool | Maven (dependency management & build automation) |
+| Diagramming | Visual Paradigm |
 | Testing | JUnit |
 | Design Patterns | Factory Pattern, Observer Pattern |
+
+---
+
+## 📐 Design Phase
+
+Before writing a single line of code, the full system was designed and documented using **Visual Paradigm**. This ensured a clear understanding of requirements and architecture across the team.
+
+The following diagrams were produced:
+
+- **Level 0 DFD** — High-level overview of data flow between the system and external entities (vehicle owners, qPay, traffic police, insurance)
+- **Level 1 DFD** — Breakdown of internal processes such as registration, fine payment, and ownership transfer
+- **Use Case Diagram** — Identifies all system actors and their interactions with core functionalities (Register Vehicle, Renew Registration, Transfer Ownership, Pay Fines, Report Accident)
+- **Use Case Specifications** — Detailed documentation for each use case covering actors, preconditions, postconditions, normal flow, and alternative flows
+- **Class Diagram** — Defines all system entities (Vehicle, Owner, Registration, Fine, Insurance, AccidentReport) with their attributes, methods, and relationships (aggregation, composition, inheritance)
+- **Sequence Diagrams** — Step-by-step interaction flows for "Transfer Registered Vehicle" and "Pay Fines and Invoices"
 
 ---
 
@@ -41,17 +57,20 @@ The `VehicleRegistration` module notifies all registered stakeholders (Traffic P
 
 ## 📸 Screenshots
 
+### Main Menu
+![Main Menu](screenshots/screenshot-main-menu.png)
+
+### Transfer Registered Vehicle
+![Transfer Registered Vehicle](screenshots/screenshot-transfer-vehicle.png)
+
+### Manage Accident Report
+![Manage Accident](screenshots/screenshot-manage-accident.png)
+
 ### Unit Test — Accident Report
-![Unit Test Accident Report](Milestones/Milestone-02/Pasted%20image%2020241123134907.png)
+![Unit Test](Milestones/Milestone-02/Pasted%20image%2020241123134907.png)
 
 ### Integration Test — Accident Management
 ![Integration Test](Milestones/Milestone-02/Pasted%20image%2020241123140324.png)
-
-### Project Gantt Chart — Milestone 1 & 2
-![Gantt Chart Milestones 1-2](Milestones/Milestone-03/Pasted%20image%2020241207160322.png)
-
-### Project Gantt Chart — Milestone 3
-![Gantt Chart Milestone 3](Milestones/Milestone-03/Pasted%20image%2020241207160843.png)
 
 ---
 
