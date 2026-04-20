@@ -10,7 +10,6 @@
 |-------|-----------|
 | Language | Java 21 |
 | UI Framework | JavaFX + Scene Builder |
-| Build Tool | Maven (dependency management & build automation) |
 | Diagramming | Visual Paradigm |
 | Testing | JUnit |
 | Design Patterns | Factory Pattern, Observer Pattern |
@@ -56,9 +55,6 @@ The `VehicleRegistration` module notifies all registered stakeholders (Traffic P
 ---
 
 ## 📸 Screenshots
-
-### Main Menu
-![Main Menu](screenshots/screenshot-main-menu.png)
 
 ### Transfer Registered Vehicle
 ![Transfer Registered Vehicle](screenshots/screenshot-transfer-vehicle.png)
